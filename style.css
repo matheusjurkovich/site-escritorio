@@ -264,7 +264,7 @@ body.menu-expanded button path {
 
 main {
   width: 100%;
-  padding: 10rem 5rem;
+  padding: 10rem 2rem;
 }
 
 #about {
@@ -299,7 +299,7 @@ main {
 
 #services {
   background-color: var(--bg-color);
-  padding: 5rem;
+  padding: 5rem 1rem;
   border-radius: 1rem;
   box-shadow: 0.1rem 0.1rem 0.5rem rgb(196, 196, 196);
 }
@@ -385,13 +385,14 @@ footer {
   flex-direction: column;
   align-items: center;
   gap: 5rem;
-  padding: 5rem 5rem;
+  padding: 5rem 2rem;
   background-color: var(--bg-color);
   box-shadow: -0.1rem -0.1rem 0.5rem rgb(196, 196, 196);
 }
 
 iframe {
-  width: 40rem;
+  width: 30rem;
+  height: 30rem;
   border-radius: 1rem;
   box-shadow: 0.1rem 0.1rem 0.5rem rgb(196, 196, 196);
 }
@@ -416,7 +417,7 @@ form {
 }
 
 #email {
-  width: 40rem;
+  width: 30rem;
   padding: 0.7rem;
   border-radius: 1rem;
   border: 0;
@@ -424,7 +425,7 @@ form {
 }
 
 #textarea {
-  width: 40rem;
+  width: 30rem;
   height: 10rem;
   padding: 0rem 0.7rem;
   border-radius: 1rem;
@@ -433,7 +434,7 @@ form {
 }
 
 #submit-btn {
-  width: 40rem;
+  width: 30rem;
   padding: 0.7rem;
   border-radius: 1rem;
   border: 0;
