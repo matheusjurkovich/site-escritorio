@@ -18,6 +18,21 @@
   --nav-height: 7.2rem;
 }
 
+::-webkit-scrollbar {
+  background: rgb(233, 230, 230);
+  width: 0.8rem;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(136, 136, 136);
+  border-radius: 10px;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -29,11 +44,15 @@ body {
 }
 
 body {
-  font-family: "DM Sans";
+  font-family: "Poppins";
   font-size: 1.6rem;
   text-align: center;
   overflow: overlay;
   background-color: var(--bg-light);
+}
+
+li {
+  list-style: none;
 }
 
 .wrapper {
@@ -42,69 +61,8 @@ body {
   padding-inline: 2.4rem;
 }
 
-ul {
-  list-style: none;
-}
-
-img {
-  max-width: 100%;
-}
-
 section {
-  padding-block: 10rem;
-}
-
-section header h4 {
-  font-size: 1.4rem;
-  font-weight: 700;
-  line-height: 150%;
-  letter-spacing: 0.08rem;
-  color: var(--primary-color);
-  text-transform: uppercase;
-  margin-bottom: 1.6rem;
-}
-
-section header h2 {
-  font-size: 3rem;
-  line-height: 3.9rem;
-  color: var(--headline);
-}
-
-section header h1 {
-  font-size: 3.4rem;
-  color: var(--headline);
-  line-height: 130%;
-  margin-bottom: 2.4rem;
-}
-
-section .content p {
-  font-weight: 400;
-  font-size: 1.6rem;
-  line-height: 150%;
-  color: var(--paragraph);
-}
-
-.button {
-  background: var(--primary-color);
-  border: none;
-  border-radius: 4rem;
-  margin-bottom: 6rem;
-  padding: 1.6rem 3.2rem;
-  width: fit-content;
-  color: white;
-  font-size: 1.4rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1.6rem;
-  text-decoration: none;
-  transition: background 200ms;
-}
-
-.button:hover {
-  background-color: var(--brand-dark);
+  margin: 5rem 0;
 }
 
 .social-links {
@@ -195,7 +153,7 @@ body.menu-expanded .close-menu {
 }
 
 .menu {
-  transform: translateY(100%);
+  transform: translateY(-100%);
   transition: transform 300ms;
 }
 
@@ -263,45 +221,79 @@ body.menu-expanded button path {
 /*===================  MAIN  ===================*/
 
 main {
-  width: 100%;
-  padding: 10rem 1rem;
-}
-
-#about {
-  padding: 5rem 1rem;
-  background-image: url(./assets/escritorio.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-radius: 1rem;
-  margin-bottom: 5rem;
-  box-shadow: 0.1rem 0.1rem 0.5rem rgb(196, 196, 196);
-}
-
-#about .description {
-  background-color: #000000a6;
-  padding: 2rem;
-  border-radius: 1rem;
-  backdrop-filter: blur(0.5rem);
-}
-
-#about .description h1 {
-  font-size: 3rem;
-  font-weight: 700;
-  color: #ffffff;
-}
-
-#about .description p {
-  font-size: 1.6rem;
-  color: #ffffff;
-  text-indent: 2rem;
-}
-
-#services {
+  display: block;
+  margin: auto;
+  padding: 5rem 2rem;
   background-color: var(--bg-color);
-  padding: 5rem 1rem;
   border-radius: 1rem;
+}
+
+#home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  padding-top: 5rem;
+  flex-direction: column;
+}
+
+#home img {
+  width: 40rem;
+  border-radius: 1rem;
+  box-shadow: 3rem -3rem var(--primary-color);
+}
+
+#home .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-direction: column;
+}
+
+#home .container h1 {
+  font-size: 3rem;
+}
+
+#home .container a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  text-decoration: none;
+  color: var(--font-color);
+  background-color: var(--primary-color);
   box-shadow: 0.1rem 0.1rem 0.5rem rgb(196, 196, 196);
+  font-weight: 700;
+  color: white;
+}
+
+#home .container a:hover {
+  filter: brightness(1.2);
+}
+
+#home .container a:active {
+  filter: brightness(0.8);
+}
+
+.divider-1 {
+  height: 3px;
+  background: linear-gradient(
+    270deg,
+    hsla(var(--hue), 36%, 57%, 1),
+    hsla(var(--hue), 65%, 88%, 0.34)
+  );
+}
+
+.divider-2 {
+  height: 3px;
+  background: linear-gradient(
+    270deg,
+    hsla(var(--hue), 65%, 88%, 0.34),
+    hsla(var(--hue), 36%, 57%, 1)
+  );
 }
 
 #services article {
@@ -331,6 +323,36 @@ main {
 
 #backToTopButton img {
   width: 4rem;
+}
+
+#about {
+  padding: 5rem 1rem;
+  background-image: url(./assets/escritorio.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+  margin: 5rem 0rem;
+
+}
+
+#about .description {
+  background-color: #000000a6;
+  padding: 2rem;
+  border-radius: 1rem;
+  backdrop-filter: blur(0.5rem);
+}
+
+#about .description h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+#about .description p {
+  font-size: 1.6rem;
+  color: #ffffff;
+  text-indent: 2rem;
 }
 
 #backToTopButton {
@@ -391,8 +413,8 @@ footer {
 }
 
 iframe {
-  width: 30rem;
-  height: 30rem;
+  width: 35rem;
+  height: 32rem;
   border-radius: 1rem;
   box-shadow: 0.1rem 0.1rem 0.5rem rgb(196, 196, 196);
 }
@@ -417,7 +439,7 @@ form {
 }
 
 #email {
-  width: 30rem;
+  width: 35rem;
   padding: 0.7rem;
   border-radius: 1rem;
   border: 0;
@@ -425,7 +447,7 @@ form {
 }
 
 #textarea {
-  width: 30rem;
+  width: 35rem;
   height: 10rem;
   padding: 0rem 0.7rem;
   border-radius: 1rem;
@@ -434,13 +456,17 @@ form {
 }
 
 #submit-btn {
-  width: 30rem;
+  width: 35rem;
+  height: 5rem;
   padding: 0.7rem;
   border-radius: 1rem;
   border: 0;
   box-shadow: 0.1rem 0.1rem 0.5rem rgb(196, 196, 196);
   background-color: var(--primary-color);
   cursor: pointer;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: #ffffff;
 }
 
 #submit-btn:hover {
@@ -451,23 +477,42 @@ form {
   filter: brightness(0.8);
 }
 
+footer hr {
+  width: 35rem;
+}
+
 .contact-alternative {
   font-size: 1.6rem;
   display: flex;
   align-items: center;
-  gap: 1rem;
-}
-
-.contact-alternative hr {
-  width: 0.2rem;
-  height: 2rem;
-  border: 0;
-  background-color: #0000007a;
 }
 
 .contact-alternative a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 4rem;
+  border-radius: 1rem;
   text-decoration: none;
   color: var(--font-color);
+  background-color: var(--primary-color);
+  box-shadow: 0.1rem 0.1rem 0.5rem rgb(196, 196, 196);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.contact-alternative a:hover {
+  filter: brightness(1.2);
+}
+
+.contact-alternative a:active {
+  filter: brightness(0.8);
+}
+
+footer blockquote {
+  opacity: 0.5;
+  margin-top: 10rem;
 }
 
 @media (min-width: 1024px) {

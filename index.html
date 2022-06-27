@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
     <title>Escritório Contábil Jurkovich</title>
@@ -20,8 +21,9 @@
 
         <div class="menu">
           <ul>
-            <li><a onclick="closeMenu()" href="#about">Sobre</a></li>
+            <li><a onclick="closeMenu()" href="#home">Inicio</a></li>
             <li><a onclick="closeMenu()" href="#services">Serviços</a></li>
+            <li><a onclick="closeMenu()" href="#about">Sobre</a></li>
             <li><a onclick="closeMenu()" href="#contact">Contato</a></li>
           </ul>
 
@@ -31,7 +33,9 @@
 
           <ul class="social-links">
             <li>
-              <a target="_blank" href="https://www.instagram.com/escritoriojurkovich"
+              <a
+                target="_blank"
+                href="https://www.instagram.com/escritoriojurkovich"
                 ><svg
                   width="24"
                   height="24"
@@ -64,7 +68,10 @@
               </a>
             </li>
             <li>
-              <a target="_blank" href="https://pt-br.facebook.com/escritoriojurkovich/">
+              <a
+                target="_blank"
+                href="https://pt-br.facebook.com/escritoriojurkovich/"
+              >
                 <svg
                   width="24"
                   height="24"
@@ -85,25 +92,17 @@
             <li>
               <a target="_blank" href="https://wa.me/5517981311576">
                 <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
+                  fill="#FFFAF1"
                   xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="26px"
+                  height="26px"
                 >
                   <path
-                    d="M22.5396 6.42C22.4208 5.94541 22.1789 5.51057 21.8382 5.15941C21.4976 4.80824 21.0703 4.55318 20.5996 4.42C18.8796 4 11.9996 4 11.9996 4C11.9996 4 5.1196 4 3.3996 4.46C2.92884 4.59318 2.50157 4.84824 2.16094 5.19941C1.82031 5.55057 1.57838 5.98541 1.4596 6.46C1.14481 8.20556 0.990831 9.97631 0.999595 11.75C0.988374 13.537 1.14236 15.3213 1.4596 17.08C1.59055 17.5398 1.8379 17.9581 2.17774 18.2945C2.51758 18.6308 2.93842 18.8738 3.3996 19C5.1196 19.46 11.9996 19.46 11.9996 19.46C11.9996 19.46 18.8796 19.46 20.5996 19C21.0703 18.8668 21.4976 18.6118 21.8382 18.2606C22.1789 17.9094 22.4208 17.4746 22.5396 17C22.852 15.2676 23.0059 13.5103 22.9996 11.75C23.0108 9.96295 22.8568 8.1787 22.5396 6.42Z"
-                    stroke="#FFFAF1"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    d="M19.077,4.928C17.191,3.041,14.683,2.001,12.011,2c-5.506,0-9.987,4.479-9.989,9.985c-0.001,1.76,0.459,3.478,1.333,4.992L2,22l5.233-1.237c1.459,0.796,3.101,1.215,4.773,1.216h0.004c5.505,0,9.986-4.48,9.989-9.985C22.001,9.325,20.963,6.816,19.077,4.928z M12.007,19.979c-1.333-0.001-2.653-0.337-3.816-0.972L7.518,18.64l-0.745,0.176l-1.968,0.465l0.481-1.784l0.216-0.802l-0.415-0.719c-0.698-1.208-1.066-2.588-1.065-3.991C4.024,7.583,7.607,4,12.01,4c2.136,0.001,4.143,0.833,5.652,2.341c1.509,1.51,2.339,3.517,2.337,5.651C19.997,16.396,16.413,19.979,12.007,19.979z"
                   />
                   <path
-                    d="M9.75 15.02L15.5 11.75L9.75 8.48001V15.02Z"
-                    stroke="#FFFAF1"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+                    d="M16.898,15.554c-0.208,0.583-1.227,1.145-1.685,1.186c-0.458,0.042-0.887,0.207-2.995-0.624c-2.537-1-4.139-3.601-4.263-3.767c-0.125-0.167-1.019-1.353-1.019-2.581S7.581,7.936,7.81,7.687c0.229-0.25,0.499-0.312,0.666-0.312c0.166,0,0.333,0,0.478,0.006c0.178,0.007,0.375,0.016,0.562,0.431c0.222,0.494,0.707,1.728,0.769,1.853s0.104,0.271,0.021,0.437s-0.125,0.27-0.249,0.416c-0.125,0.146-0.262,0.325-0.374,0.437c-0.125,0.124-0.255,0.26-0.11,0.509c0.146,0.25,0.646,1.067,1.388,1.728c0.954,0.85,1.757,1.113,2.007,1.239c0.25,0.125,0.395,0.104,0.541-0.063c0.146-0.166,0.624-0.728,0.79-0.978s0.333-0.208,0.562-0.125s1.456,0.687,1.705,0.812c0.25,0.125,0.416,0.187,0.478,0.291C17.106,14.471,17.106,14.971,16.898,15.554z"
                   />
                 </svg>
               </a>
@@ -172,18 +171,31 @@
       </div>
     </nav>
     <main>
-      <section id="about">
-        <article class="description">
-          <h1>Quem somos?</h1>
-          <p>
-            Atuamos no mercado auxiliando empresas nas áreas contábil, fiscal,
-            trabalhista e tributária. Por meio da dedicação e do comprometimento
-            da nossa equipe, você dispõe de uma linha completa de serviços que
-            facilitam a sua administração financeira. Conte com soluções seguras
-            e tenha a contribuição certa para o crescimento do seu negócio.
-          </p>
-        </article>
+      <section id="home">
+        <img src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80" alt="">
+        <div class="container">
+          <h1>O escritorio que ajuda a facilitar a vida de sua empresa.</h1>
+          <p>Domicilado em São José do Rio Preto, o Escritorio Contabil Jurkovich presta os principais tipos de serviços de contabilidade.</p>
+          <a href="https://wa.me/5517981311576">
+            <svg
+              fill="#FFFAF1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="26px"
+              height="26px"
+            >
+              <path
+                d="M19.077,4.928C17.191,3.041,14.683,2.001,12.011,2c-5.506,0-9.987,4.479-9.989,9.985c-0.001,1.76,0.459,3.478,1.333,4.992L2,22l5.233-1.237c1.459,0.796,3.101,1.215,4.773,1.216h0.004c5.505,0,9.986-4.48,9.989-9.985C22.001,9.325,20.963,6.816,19.077,4.928z M12.007,19.979c-1.333-0.001-2.653-0.337-3.816-0.972L7.518,18.64l-0.745,0.176l-1.968,0.465l0.481-1.784l0.216-0.802l-0.415-0.719c-0.698-1.208-1.066-2.588-1.065-3.991C4.024,7.583,7.607,4,12.01,4c2.136,0.001,4.143,0.833,5.652,2.341c1.509,1.51,2.339,3.517,2.337,5.651C19.997,16.396,16.413,19.979,12.007,19.979z"
+              />
+              <path
+                d="M16.898,15.554c-0.208,0.583-1.227,1.145-1.685,1.186c-0.458,0.042-0.887,0.207-2.995-0.624c-2.537-1-4.139-3.601-4.263-3.767c-0.125-0.167-1.019-1.353-1.019-2.581S7.581,7.936,7.81,7.687c0.229-0.25,0.499-0.312,0.666-0.312c0.166,0,0.333,0,0.478,0.006c0.178,0.007,0.375,0.016,0.562,0.431c0.222,0.494,0.707,1.728,0.769,1.853s0.104,0.271,0.021,0.437s-0.125,0.27-0.249,0.416c-0.125,0.146-0.262,0.325-0.374,0.437c-0.125,0.124-0.255,0.26-0.11,0.509c0.146,0.25,0.646,1.067,1.388,1.728c0.954,0.85,1.757,1.113,2.007,1.239c0.25,0.125,0.395,0.104,0.541-0.063c0.146-0.166,0.624-0.728,0.79-0.978s0.333-0.208,0.562-0.125s1.456,0.687,1.705,0.812c0.25,0.125,0.416,0.187,0.478,0.291C17.106,14.471,17.106,14.971,16.898,15.554z"
+              />
+            </svg>
+            ENTRE EM CONTATO
+          </a>
+        </div>
       </section>
+      <div class="divider-2"></div>
       <section id="services">
         <article>
           <div class="description">
@@ -233,6 +245,19 @@
           <img src="./assets/societario.jpg" alt="" />
         </article>
       </section>
+      <div class="divider-1"></div>
+      <section id="about">
+        <article class="description">
+          <h1>Quem somos?</h1>
+          <p>
+            Atuamos no mercado auxiliando empresas nas áreas contábil, fiscal,
+            trabalhista e tributária. Por meio da dedicação e do comprometimento
+            da nossa equipe, você dispõe de uma linha completa de serviços que
+            facilitam a sua administração financeira. Conte com soluções seguras
+            e tenha a contribuição certa para o crescimento do seu negócio.
+          </p>
+        </article>
+      </section>
     </main>
     <footer>
       <iframe
@@ -263,17 +288,30 @@
           />
           <input type="button" id="submit-btn" value="Enviar" />
         </form>
-        <span>Ou</span>
+        <hr />
         <div class="contact-alternative">
-          <span
-            ><a href="mailto:jurkovich@jurkovich.com.br"
-              >Email: jurkovich@jurkovich.com.br</a
-            ></span
-          >
-          <hr />
-          <span><a href="tel:32017070">Telefone: 3201-7070</a></span>
+          <a href="https://wa.me/5517981311576">
+            <svg
+              fill="#FFFAF1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="26px"
+              height="26px"
+            >
+              <path
+                d="M19.077,4.928C17.191,3.041,14.683,2.001,12.011,2c-5.506,0-9.987,4.479-9.989,9.985c-0.001,1.76,0.459,3.478,1.333,4.992L2,22l5.233-1.237c1.459,0.796,3.101,1.215,4.773,1.216h0.004c5.505,0,9.986-4.48,9.989-9.985C22.001,9.325,20.963,6.816,19.077,4.928z M12.007,19.979c-1.333-0.001-2.653-0.337-3.816-0.972L7.518,18.64l-0.745,0.176l-1.968,0.465l0.481-1.784l0.216-0.802l-0.415-0.719c-0.698-1.208-1.066-2.588-1.065-3.991C4.024,7.583,7.607,4,12.01,4c2.136,0.001,4.143,0.833,5.652,2.341c1.509,1.51,2.339,3.517,2.337,5.651C19.997,16.396,16.413,19.979,12.007,19.979z"
+              />
+              <path
+                d="M16.898,15.554c-0.208,0.583-1.227,1.145-1.685,1.186c-0.458,0.042-0.887,0.207-2.995-0.624c-2.537-1-4.139-3.601-4.263-3.767c-0.125-0.167-1.019-1.353-1.019-2.581S7.581,7.936,7.81,7.687c0.229-0.25,0.499-0.312,0.666-0.312c0.166,0,0.333,0,0.478,0.006c0.178,0.007,0.375,0.016,0.562,0.431c0.222,0.494,0.707,1.728,0.769,1.853s0.104,0.271,0.021,0.437s-0.125,0.27-0.249,0.416c-0.125,0.146-0.262,0.325-0.374,0.437c-0.125,0.124-0.255,0.26-0.11,0.509c0.146,0.25,0.646,1.067,1.388,1.728c0.954,0.85,1.757,1.113,2.007,1.239c0.25,0.125,0.395,0.104,0.541-0.063c0.146-0.166,0.624-0.728,0.79-0.978s0.333-0.208,0.562-0.125s1.456,0.687,1.705,0.812c0.25,0.125,0.416,0.187,0.478,0.291C17.106,14.471,17.106,14.971,16.898,15.554z"
+              />
+            </svg>
+            Entre em contato via WhatsApp
+          </a>
         </div>
       </div>
+      <blockquote>
+        2022 &copy; Escritorio Contábil Jurkovich, todos os direitos reservados.
+      </blockquote>
     </footer>
     <button onclick="backToTop()" id="backToTopButton">
       <img src="./assets/arrow-up.svg" alt="" />

@@ -60,16 +60,22 @@ function closeMenu() {
 }
 
 ScrollReveal({
-  origin: 'top',
+  origin: 'bottom',
   distance: '30px',
   duration: 700
 }).reveal(`
   #home, 
   #home img, 
-  #home .stats, 
+  #home .container, 
+  #home .container h1,
+  #home .container p,
   #services,
-  #services header,
-  #services .card
+  #services article,
+  #services article img,
+  #services article h1,
+  #services article p,
   #about, 
   #about header, 
-  #about .content`)
+  #about .description,
+  .contact-alternative
+  `)
