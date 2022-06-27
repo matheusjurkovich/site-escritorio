@@ -130,11 +130,11 @@ button.open-menu path[stroke*="#00856F"],
 
 body.menu-expanded #navigation .logo path,
 #navigation.scroll .logo path {
-  fill: white;
+  fill: rgb(0, 0, 0);
 }
 
 #navigation.scroll button.open-menu path[stroke*="#00856F"] {
-  stroke: white;
+  stroke: rgb(0, 0, 0);
 }
 
 /*=== NAVIGATION =================================*/
@@ -313,8 +313,9 @@ main {
 #services article img {
   width: 15rem;
   height: 15rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.171);
   border-radius: 1rem;
-  box-shadow: 0.1rem 0.1rem 1rem #888888;
+  box-shadow: 2rem -2rem var(--primary-color);
   z-index: 1;
   margin: 4rem 0rem;
 }
@@ -375,4 +376,95 @@ main {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
+}
+
+/*===================  FOOTER  ===================*/
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+  padding: 5rem 5rem;
+  background-color: var(--bg-color);
+  box-shadow: -0.1rem -0.1rem 0.5rem rgb(196, 196, 196);
+}
+
+iframe {
+  width: 40rem;
+  border-radius: 1rem;
+  box-shadow: 0.1rem 0.1rem 0.5rem rgb(196, 196, 196);
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.6rem;
+  gap: 2rem;
+}
+
+#contact h1 {
+  font-size: 3rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+#email {
+  width: 40rem;
+  padding: 0.7rem;
+  border-radius: 1rem;
+  border: 0;
+  box-shadow: 0.1rem 0.1rem 0.5rem rgb(196, 196, 196);
+}
+
+#textarea {
+  width: 40rem;
+  height: 10rem;
+  padding: 0rem 0.7rem;
+  border-radius: 1rem;
+  border: 0;
+  box-shadow: 0.1rem 0.1rem 0.5rem rgb(196, 196, 196);
+}
+
+#submit-btn {
+  width: 40rem;
+  padding: 0.7rem;
+  border-radius: 1rem;
+  border: 0;
+  box-shadow: 0.1rem 0.1rem 0.5rem rgb(196, 196, 196);
+  background-color: var(--primary-color);
+  cursor: pointer;
+}
+
+#submit-btn:hover {
+  filter: brightness(1.2);
+}
+
+#submit-btn:active {
+  filter: brightness(0.8);
+}
+
+.contact-alternative {
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact-alternative hr {
+  width: 0.2rem;
+  height: 2rem;
+  border: 0;
+  background-color: #0000007a;
+}
+
+.contact-alternative a {
+  text-decoration: none;
+  color: var(--font-color);
 }
