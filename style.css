@@ -533,11 +533,11 @@ footer .reference {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 5rem;
+  gap: 3rem;
 }
 
 footer .reference img {
-  width: 25rem;
+  width: 20rem;
 }
 
 footer blockquote {
