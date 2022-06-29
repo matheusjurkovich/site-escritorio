@@ -315,6 +315,7 @@ main {
   font-size: 1.6rem;
   text-align: justify;
   flex-wrap: wrap;
+  gap: 1rem;
 }
 
 #services article .description ul {
@@ -432,7 +433,7 @@ main {
   align-items: center;
   font-size: 1.6rem;
   gap: 2rem;
-  padding: 5rem 2rem 0rem;
+  padding: 0rem 2rem 0rem;
 }
 
 #contact .contatos h1 {
@@ -524,20 +525,20 @@ footer  {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5rem 2rem;
+  padding: 5rem 0rem 2rem;
   background-color: var(--primary-color);
   box-shadow: -0.1rem -0.1rem 0.5rem rgb(196, 196, 196);
 }
 
 footer .reference {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
   gap: 3rem;
 }
 
-footer .reference img {
-  width: 20rem;
+footer .reference a img {
+  width: 25rem;
 }
 
 footer blockquote {
@@ -575,6 +576,7 @@ footer blockquote {
   }
 
   /*=== NAVIGATION =================================*/
+
   nav#navigation .wrapper * {
     margin: 0;
     padding: 0;
@@ -684,13 +686,14 @@ footer blockquote {
     background-color: var(--primary-color);
     filter: brightness(1.3);
     border: none;
+    transition: 300ms;
   }
 
 
   /*============== HOME ===========*/
   
   main {
-    padding-inline: 15rem;
+    padding-inline: 20rem;
   }
 
   #home {
@@ -718,28 +721,40 @@ footer blockquote {
     padding: 5rem 10rem;
   }
 
-  footer {
-    padding-inline: 15rem;
-    padding-block: 0rem;
-  }
-
-  footer .contatos {
+  #contact {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
   }
 
-  #contact {
+  #contact iframe {
     width: 50rem;
+    height: 40rem;
   }
 
-  .contatos iframe {
-    width: 40rem;
-    height: 36rem;
+  .contatos form #submit-btn:hover {
+    transition: 300ms;
   }
-  footer blockquote {
-    margin-bottom: 5rem;
+  .contatos .contact-alternative a:hover {
+    transition: 300ms;
   }
 
+  /*===================  FOOTER  ===================*/
+
+  footer .reference {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+    gap: 0;
+  }
+
+  footer .reference .social-links li:hover {
+    transition: transform 300ms;
+    transform: translateY(-.5rem);
+  }
+  
+  footer .reference .social-links li a {
+    cursor: pointer;
+  }
 }
