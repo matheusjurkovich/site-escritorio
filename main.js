@@ -77,5 +77,8 @@ ScrollReveal({
   #about, 
   #about header, 
   #about .description,
-  .contact-alternative
+  .contact-alternative,
+  #faq,
+  #faq .accordion,
+  #faq .accordion-item
   `)
