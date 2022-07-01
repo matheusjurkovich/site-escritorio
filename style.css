@@ -62,7 +62,7 @@ li {
 }
 
 section {
-  margin: 5rem 0;
+  margin: 10rem 0;
 }
 
 .social-links {
@@ -352,7 +352,6 @@ main {
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 1rem;
-  margin: 5rem 0rem;
 }
 
 #about .description {
@@ -520,7 +519,20 @@ main {
 
 /*===================  FAQ-MENU  ===================*/
 
+#faq .container {
+  margin-bottom: .5rem;
+}
+
+#faq h1 {
+  text-align: left;
+  margin-bottom: 5rem;
+  font-size: 3rem;
+}
+
 .accordion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   background-color: var(--primary-color);
   color: #ffffff;
   cursor: pointer;
@@ -529,14 +541,12 @@ main {
   text-align: left;
   border: none;
   outline: none;
-  transition: 0.4s;
-  margin: .2rem;
-  font-size: 2rem;
+  transition: 1s;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  font-size: 1.8rem;
   font-family: 'Poppins';
-}
-
-#faq .container {
-  border-radius: 1rem;
+  font-weight: 700;
 }
 
 .active, .accordion:hover {
@@ -545,25 +555,25 @@ main {
 
 .panel {
   text-align: left;
-  padding: 0 18px;
   background-color: white;
   display: none;
   overflow: hidden;
   box-shadow: 0.1rem 0.1rem 0.5rem rgb(196, 196, 196);
   margin-bottom: 2rem;
-
+  padding: 1rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 }
 
 .accordion:after {
-  content: '\02795';
-  font-size: 1rem;
+  content: '\002B';
+  font-size: 2rem;
   color: white;
-  float: right;
-  margin-left: .5rem;
+ 
 }
 
 .active:after {
-  content: "\2796";
+  content: "\2212";
 }
 
 /*===================  FOOTER  ===================*/
