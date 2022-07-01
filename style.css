@@ -6,7 +6,7 @@
 
 :root {
   --hue: 170;
-  --primary-color: hsl(var(--hue), 80%, 36%);
+  --primary-color: hsl(var(--hue), 70%, 36%);
   --headline: hsl(210, 11%, 15%);
   --paragraph: hsl(210, 9%, 31%);
   --brand-beige: hsl(39, 100%, 97%);
@@ -107,7 +107,7 @@ nav {
 }
 
 .logo img {
-  width: 20rem;
+  width: 15rem;
 }
 
 nav .wrapper {
@@ -117,7 +117,7 @@ nav .wrapper {
 }
 
 nav.scroll {
-  background: var(--primary-color);
+  background-color: hsla(180, 12%, 97%, 0.966);;
 }
 
 nav button {
@@ -625,6 +625,10 @@ footer blockquote {
 
   /*=== NAVIGATION =================================*/
 
+  .logo img {
+    width: 20rem;
+  }
+
   nav#navigation .wrapper * {
     margin: 0;
     padding: 0;
@@ -684,13 +688,10 @@ footer blockquote {
   }
 
   nav#navigation.scroll .menu ul li a {
-    color: white;
+    color: black;
   }
 
-  nav#navigation.scroll .menu a.button {
-    border-color: white;
-    color: white;
-  }
+ 
 
   nav#navigation .menu li a {
     transition: opacity 0.4s;
@@ -712,10 +713,6 @@ footer blockquote {
     left: -0.5rem;
     display: block;
     transition: width 0.2s;
-  }
-
-  nav#navigation.scroll .menu li a::after {
-    background-color: white;
   }
 
   nav#navigation .menu li a.active::after,
