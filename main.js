@@ -80,9 +80,10 @@ ScrollReveal({
   .contact-alternative,
   #faq,
   #faq .accordion,
-  #faq .accordion-item`)
+  #faq .accordion-item
+`)
 
-var acc = document.getElementsByClassName("accordion");
+const acc = document.getElementsByClassName("accordion");
 
 for (let i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
