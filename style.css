@@ -445,12 +445,11 @@ main {
   gap: 2rem;
 }
 
-#contact .contatos #email {
+#contact .contatos #email, #userName {
   width: 35rem;
   padding: 0.7rem;
   border-radius: 1rem;
-  border: 0;
-  box-shadow: 0.1rem 0.1rem 0.5rem rgb(196, 196, 196);
+  border: 0.1rem solid black;
 }
 
 #contact .contatos #textarea {
@@ -458,8 +457,7 @@ main {
   height: 10rem;
   padding: 0rem 0.7rem;
   border-radius: 1rem;
-  border: 0;
-  box-shadow: 0.5rem 0.5rem 0.5rem rgb(196, 196, 196);
+  border: 0.1rem solid black;
 }
 
 #contact .contatos #submit-btn {
